@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*[dir="ltr"] body {
+  font-family: Inter, sans-serif;
+}
+
+*[dir="rtl"] body {
+  font-family: Cairo, sans-serif;
+}
+
+@layer components {
+  .input {
+    @apply border-gray focus:border-secondary w-full rounded-md border p-[10px] outline-none transition-all placeholder:text-sm;
+  }
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+  img {
+    @apply object-cover object-center;
+  }
+}
+
+/* scrollbar Syles */
+*::-webkit-scrollbar {
+  @apply w-[5px];
+}
+*::-webkit-scrollbar-track {
+  @apply bg-light;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-secondary;
+}
+
+/* Vertical scrollbar */
+*::-webkit-scrollbar:vertical {
+  @apply w-[8px];
+}
+
+/* Horizontal scrollbar */
+*::-webkit-scrollbar:horizontal {
+  @apply h-[10px];
+}
