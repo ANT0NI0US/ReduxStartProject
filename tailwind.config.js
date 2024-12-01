@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -22,14 +23,11 @@ export default {
         screen: "100dvh",
       },
       colors: {
-        light: "#FFFF",
         primary: "#12BBC2",
         secondary: "#2D404E",
         lightPrimary: "#D2FBFA",
-        bgColor: "#F8F7F7",
         darkPrimary: "#167C88",
         textColor: "#686161",
-        lightGray: "#BCD2E0",
       },
 
       screens: {

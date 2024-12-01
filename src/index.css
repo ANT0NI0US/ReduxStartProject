@@ -22,7 +22,12 @@
 
 @layer components {
   .input {
-    @apply border-gray focus:border-secondary w-full rounded-md border p-[10px] outline-none transition-all placeholder:text-sm;
+    @apply w-full rounded-md border-[2px] border-darkPrimary p-[10px] outline-none transition-all placeholder:text-sm focus:border-secondary;
+    &:-webkit-autofill {
+      -webkit-text-fill-color: #253b45;
+      box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+      caret-color: #253b45;
+    }
   }
   .flexCenter {
     @apply flex items-center justify-center;
@@ -35,12 +40,12 @@
   }
 }
 
-/* scrollbar Syles */
+/* scrollbar Styles */
 *::-webkit-scrollbar {
   @apply w-[5px];
 }
 *::-webkit-scrollbar-track {
-  @apply bg-light;
+  @apply bg-primary;
 }
 
 *::-webkit-scrollbar-thumb {
