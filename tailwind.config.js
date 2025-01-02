@@ -16,18 +16,22 @@ export default {
         },
       },
       fontFamily: {
-        merienda: ["Merienda", "cursive"],
-        Monoton: ["Monoton"],
+        protest: ['"Protest Guerrilla"', "sans-serif"],
+        alexandria: ['"Alexandria"', "sans-serif"],
       },
       height: {
         screen: "100dvh",
       },
       colors: {
-        primary: "#12BBC2",
+        primary: "#202020",
         secondary: "#2D404E",
         lightPrimary: "#D2FBFA",
         darkPrimary: "#167C88",
-        textColor: "#686161",
+        textColor: "#353535",
+
+        error: "#EE4B2B",
+        disabled: "#d1dae6",
+        info: "#f2f9fd",
       },
 
       screens: {

@@ -1,11 +1,16 @@
 import styles from "./Spinner.module.css";
 
-export default function Spinner({ Styles = "h-[100vh] min-h-full" }) {
+const spinnerSizes = {
+  md: "h-[50vh]",
+  lg: "h-[100vh] min-h-full",
+};
+
+export default function Spinner({ size = "md" }) {
   return (
-    <div className={`flexCenter bg-transparent backdrop-blur-sm ${Styles}`}>
-      <div
-        className={`${styles.loader} h-[4px] w-[4px] rounded-[50%] text-primary`}
-      ></div>
+    <div
+      className={`flexCenter bg-transparent backdrop-blur-sm ${spinnerSizes[size]}`}
+    >
+      <div className={`${styles.loader}`}></div>
     </div>
   );
 }

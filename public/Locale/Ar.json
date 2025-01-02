@@ -2,13 +2,42 @@
   "general": {
     "english": "الانجليزية",
     "arabic": "العربية",
+    "back": "رجوع",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "delete": "حذف",
+    "close": "إغلاق",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "yes": "نعم",
+    "previous": "السابق",
+    "next": "التالي",
+    "showing": "عرض",
+    "to": "إلى",
+    "of": "من",
+    "questionMark": "؟",
+    "backToTop": "العودة الي اعلي الصفحة",
+    "noDataFound": "لا توجد بيانات",
     "backToDashboard": "العودة للوحة المؤشر",
-    "pageNotFound": "الصفحة غير موجودة"
+    "pageNotFound": "الصفحة غير موجودة",
+    "showPassword": "عرض كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+    "actions": "الإجراءات",
+    "underConstructions": "الصفحة تحت الإنشاء",
+    "downloadPdf": "تصدير ملف PDF",
+    "noData": "لا توجد بيانات لعرضها."
   },
-  "dashboard": {
-    "dashboard": "لوحة المؤشرات",
-    "ourService": "خدمتنا",
-    "whoAreWe": "من نحن",
-    "ourBusiness": "اعمالنا"
+  "errors": {
+    "fieldRequired": "هذا الحقل مطلوب",
+    "onlySpaces": "لا يجب أن يحتوي على مسافات فقط",
+    "onlyText": "حروف فقط",
+    "minLength": "أدخل 3 أحرف على الأقل",
+    "maxLength": "لقد تجاوزت الحد الأقصى للطول (50)",
+    "numbersOnly": "أرقام فقط",
+    "OnlyArabicCharactersAreAllowed": "السماح فقط بالأحرف العربية",
+    "OnlyEnglishCharactersAreAllowed": "السماح فقط بالأحرف الإنجليزية",
+    "InvalidEmailFormat": "تنسيق البريد الإلكتروني غير صالح",
+    "InvalidPhoneFormat": "تنسيق رقم الهاتف غير صالح",
+    "imageError": "يُسمح فقط بتحميل امتدادات الصور من نوع (jpg, png, webp)"
   }
 }

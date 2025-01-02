@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import StoreProvider from "./StoreProvider";
 import RoutesProvider from "./RoutesProvider";
-import Navigations from "../navigations/Navigations";
+import Navigation from "../navigation/Navigation";
 
 import { ToastContainer, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,7 +18,7 @@ export default function AppProvider() {
   return (
     <StoreProvider>
       <RoutesProvider>
-        <Navigations />
+        <Navigation />
         <ToastContainer
           position="top-center"
           autoClose={5000}

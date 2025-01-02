@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+/* arabic */
+/* header */
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+/* body */
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+
+/* English */
+/* header */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+/* body */
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,17 +20,21 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #353535;
+}
+
 *[dir="ltr"] body {
-  font-family: Inter, sans-serif;
+  font-family: "Philosopher", serif;
 }
 
 *[dir="rtl"] body {
-  font-family: Cairo, sans-serif;
+  font-family: "El Messiri", serif;
 }
 
 @layer components {
   .input {
-    @apply w-full rounded-md border-[2px] border-darkPrimary p-[10px] outline-none transition-all placeholder:text-sm focus:border-secondary;
+    @apply w-full p-[10px] outline-none transition-all duration-300 placeholder:text-sm disabled:cursor-not-allowed disabled:bg-[#d1dae6];
     &:-webkit-autofill {
       -webkit-text-fill-color: #253b45;
       box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
@@ -37,6 +49,12 @@
   }
   img {
     @apply object-cover object-center;
+  }
+}
+
+.tableFooter {
+  &:not(:has(*)) {
+    display: none;
   }
 }
 
@@ -60,4 +78,19 @@
 /* Horizontal scrollbar */
 *::-webkit-scrollbar:horizontal {
   @apply h-[10px];
+}
+
+/* Scroll to top button */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce-infinite {
+  animation: bounce 2s infinite;
 }

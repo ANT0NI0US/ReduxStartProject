@@ -2,13 +2,42 @@
   "general": {
     "english": "English",
     "arabic": "Arabic",
-    "backToDashboard": "Back To Dashboard",
-    "pageNotFound": "Page Not Found"
+    "back": "Back",
+    "edit": "Edit",
+    "add": "Add",
+    "delete": "Delete",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "yes": "Yes",
+    "previous": "Previous",
+    "next": "Next",
+    "showing": "Showing",
+    "to": "To",
+    "of": "Of",
+    "questionMark": "?",
+    "backToTop": "Back to Top",
+    "noDataFound": "No Data Found",
+    "backToDashboard": "Back to Dashboard",
+    "pageNotFound": "Page Not Found",
+    "showPassword": "Show Password",
+    "hidePassword": "Hide Password",
+    "actions": "Actions",
+    "underConstructions": "Page Under Construction",
+    "downloadPdf": "Download PDF File",
+    "noData": "No data to show."
   },
-  "dashboard": {
-    "dashboard": "Dashboard",
-    "ourService": "Our Service",
-    "whoAreWe": "Who Are We",
-    "ourBusiness": "Our Business"
+  "errors": {
+    "fieldRequired": "This field is required",
+    "onlySpaces": "Should not contain spaces only",
+    "onlyText": "Letters only",
+    "minLength": "Enter at least 3 characters",
+    "maxLength": "You have exceeded the maximum length (50)",
+    "numbersOnly": "Numbers only",
+    "OnlyArabicCharactersAreAllowed": "Only Arabic characters are allowed",
+    "OnlyEnglishCharactersAreAllowed": "Only English characters are allowed",
+    "InvalidEmailFormat": "Invalid email format",
+    "InvalidPhoneFormat": "Invalid phone number format",
+    "imageError": "Only image extensions (jpg, png, webp) are allowed"
   }
 }
