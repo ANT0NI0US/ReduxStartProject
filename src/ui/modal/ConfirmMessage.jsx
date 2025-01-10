@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { MdErrorOutline } from "react-icons/md";
 import Button from "../buttons/Button";
 
 export default function ConfirmMessage({
@@ -16,11 +17,15 @@ export default function ConfirmMessage({
 
   return (
     <>
-      <p className="p-[15px] text-lg font-medium capitalize md:p-[20px]">
-        {message}
-      </p>
+      <div className=" p-[15px] md:p-[20px]">
+        <MdErrorOutline className="mx-auto text-8xl text-error" />
 
-      <div className="bg-info rounded-bl-lg rounded-br-lg border-t px-4 py-6">
+        <p className=" text-center text-lg font-medium capitalize ">
+          {message}
+        </p>
+      </div>
+
+      <div className="rounded-bl-lg rounded-br-lg border-t bg-info px-4 py-6">
         <div className="ms-auto flex w-full gap-[10px]">
           <Button
             AriaLabel={t("general.yes")}

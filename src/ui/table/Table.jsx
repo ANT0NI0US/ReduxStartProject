@@ -3,7 +3,7 @@ import HighlightMessage from "../HighlightMessage";
 
 const Table = ({ children }) => {
   return (
-    <div className="w-full overflow-x-auto rounded-tl-[12px] rounded-tr-[12px] shadow-md">
+    <div className="w-full overflow-x-auto rounded-tl-md rounded-tr-md shadow-md">
       <table className="w-full text-center text-sm">{children}</table>
     </div>
   );
@@ -11,7 +11,7 @@ const Table = ({ children }) => {
 
 const Header = ({ children }) => {
   return (
-    <thead className="rtl:font-alexandria bg-secondary uppercase tracking-wider text-white ltr:font-protest">
+    <thead className="bg-secondary uppercase tracking-wider text-white ltr:font-protest rtl:font-alexandria">
       <tr>{children}</tr>
     </thead>
   );

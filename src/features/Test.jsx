@@ -20,11 +20,18 @@ import HighlightMessage from "@/ui/HighlightMessage";
 import { MdWarning } from "react-icons/md";
 import { RiErrorWarningFill } from "react-icons/ri";
 import PageUnderConstruction from "@/ui/PageUnderConstruction";
+import Accordion from "@/ui/Accordion";
+import Card from "@/ui/Card";
+
+const string = "he llo ";
+
 const Test = () => {
   const { t } = useTranslation();
   function handleDeleteAnnouncement() {
     console.log("totos");
   }
+
+  console.log(string.trimStart());
 
   const {
     register,
@@ -51,6 +58,35 @@ const Test = () => {
         className="mx-auto mt-10 w-fit text-[50px] tracking-wider"
         title={t("general.pageNotFound")}
       />
+
+      <div className="mx-auto mb-10 w-[350px]">
+        <Card>
+          <Card.Header hasImage>
+            <img src="https://i.ibb.co/bBqQRbR/gallery5.webp" alt="gallery5" />
+          </Card.Header>
+          <Card.Body hasHeader hasFooter>
+            <p>al wala wala aho al wala totos aho</p>
+          </Card.Body>
+          <Card.Footer>
+            <p>eh hntyro</p>
+          </Card.Footer>
+        </Card>
+      </div>
+
+      <div>
+        <Accordion title="What is React?" defaultOpen>
+          React is a JavaScript library for building user interfaces. It allows
+          developers to create reusable UI components.
+        </Accordion>
+        <Accordion title="What is Tailwind CSS?">
+          Tailwind CSS is a utility-first CSS framework for creating custom
+          designs without leaving your HTML.
+        </Accordion>
+        <Accordion title="How to use this accordion?">
+          Pass the title as a prop and include your content as children.
+          Customize it by adding additional styles via props.
+        </Accordion>
+      </div>
 
       <div className="mb-8 space-y-4">
         <PageUnderConstruction />
@@ -321,7 +357,7 @@ const Test = () => {
 
         <Modal.Window name="deleteAnnouncement">
           <ConfirmMessage
-            message={`هل أنت متأكد من أنك تريد حدف ذلك`}
+            message={` هل أنت متأكد من أنك تر هل أنت متأكد من أنك تر هل أنت متأكد من أنك تر هل أنت متأكد من أنك تر هل أنت متأكد من أنك تر هل أنت متأكد من أنك تر هل أنت متأكد من أنك تر هل أنت متأكد من أنك تر هل أنت متأكد من أنك تريد حدف ذلك`}
             onConfirm={handleDeleteAnnouncement}
           />
         </Modal.Window>
