@@ -17,11 +17,12 @@ import TestingTable from "./TestingTable";
 import TabsLayout from "./TabsLayout";
 import Information from "@/ui/Information";
 import HighlightMessage from "@/ui/HighlightMessage";
-import { MdWarning } from "react-icons/md";
+import { MdAddCircle, MdWarning } from "react-icons/md";
 import { RiErrorWarningFill } from "react-icons/ri";
 import PageUnderConstruction from "@/ui/PageUnderConstruction";
 import Accordion from "@/ui/Accordion";
 import Card from "@/ui/Card";
+import BackButton from "@/ui/buttons/BackButton";
 
 const string = "he llo ";
 
@@ -53,13 +54,19 @@ const Test = () => {
     console.log(data);
   }
   return (
-    <div className="my-10 px-5">
-      <PageTitle
-        className="mx-auto mt-10 w-fit text-[50px] tracking-wider"
-        title={t("general.pageNotFound")}
-      />
+    <div className="container my-10">
+      <PageTitle title={t("general.pageNotFound")} />
 
-      <div className="mx-auto mb-10 w-[350px]">
+      <div className="print:hidden">totos</div>
+
+      {/* <div>
+        <RiErrorWarningFill />
+        <span className="sr-only">settings</span>
+      </div> */}
+
+      <BackButton />
+
+      <div className="mx-auto mb-10 w-full sm:w-[350px]">
         <Card>
           <Card.Header hasImage>
             <img src="https://i.ibb.co/bBqQRbR/gallery5.webp" alt="gallery5" />
@@ -249,7 +256,10 @@ const Test = () => {
           error={"totos"}
         />
 
-        <Button disabled>totos</Button>
+        <Button>
+          <MdAddCircle />
+          <p>{t("general.pageNotFound")}</p>
+        </Button>
         <Button variation="secondary" loading>
           nasr
         </Button>

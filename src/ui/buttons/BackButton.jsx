@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { FaLongArrowAltLeft } from "react-icons/fa";
+import { TiArrowBack } from "react-icons/ti";
 import Button from "./Button";
 
 export default function BackButton({ To = "/", onClick }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Button
@@ -12,9 +12,10 @@ export default function BackButton({ To = "/", onClick }) {
       onClick={onClick}
       To={To}
       Replace
+      styles={`${i18n.language === "en" ? "!flex-row-reverse" : "!flex-row"}`}
     >
       {t("general.back")}
-      <FaLongArrowAltLeft />
+      <TiArrowBack size={22} />
     </Button>
   );
 }

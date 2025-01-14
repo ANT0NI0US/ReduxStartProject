@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const Loading = () => (
-  <div className="flexCenter gap-1">
-    <div className="h-3 w-3 animate-bounce rounded-full bg-darkPrimary [animation-delay:-0.3s]"></div>
-    <div className="h-3 w-3 animate-bounce rounded-full bg-darkPrimary [animation-delay:-0.15s]"></div>
-    <div className="h-3 w-3 animate-bounce rounded-full bg-darkPrimary"></div>
+  <div className="flexCenter gap-1 [&_div]:size-3 [&_div]:rounded-full [&_div]:bg-darkPrimary">
+    <div className="animate-bounce [animation-delay:-0.3s]"></div>
+    <div className="animate-bounce [animation-delay:-0.15s]"></div>
+    <div className="animate-bounce"></div>
   </div>
 );
 

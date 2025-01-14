@@ -25,7 +25,10 @@
     "actions": "الإجراءات",
     "underConstructions": "الصفحة تحت الإنشاء",
     "downloadPdf": "تصدير ملف PDF",
-    "noData": "لا توجد بيانات لعرضها."
+    "noData": "لا توجد بيانات لعرضها.",
+    "lightMode": "وضع الضوء",
+    "darkMode": "الوضع المظلم",
+    "colorTheme": "موضوع اللون"
   },
   "errors": {
     "fieldRequired": "هذا الحقل مطلوب",

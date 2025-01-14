@@ -1,18 +1,19 @@
 // eslint-disable-next-line
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       container: {
         center: true,
         padding: {
-          DEFAULT: "5px",
-          xs: "5px",
-          sm: "10px",
-          md: "15px",
-          lg: "20px",
-          xl: "25px",
-          "2xl": "30px",
+          DEFAULT: "1rem",
+          // xs: "1.5rem",
+          sm: "2rem",
+          // md: "3rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
         },
       },
       fontFamily: {
@@ -34,14 +35,14 @@ export default {
         info: "#f2f9fd",
       },
 
-      screens: {
-        xs: "480px",
-        sm: "768px",
-        md: "1060px",
-        lg: "1280px",
-        xl: "1536px",
-        "2xl": "2400px",
-      },
+      // screens: {
+      //   xs: "480px",
+      //   sm: "768px",
+      //   md: "1060px",
+      //   lg: "1280px",
+      //   xl: "1536px",
+      //   "2xl": "2400px",
+      // },
     },
   },
   plugins: [],

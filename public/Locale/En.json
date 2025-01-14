@@ -25,7 +25,10 @@
     "actions": "Actions",
     "underConstructions": "Page Under Construction",
     "downloadPdf": "Download PDF File",
-    "noData": "No data to show."
+    "noData": "No data to show.",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "colorTheme": "Color Theme"
   },
   "errors": {
     "fieldRequired": "This field is required",
