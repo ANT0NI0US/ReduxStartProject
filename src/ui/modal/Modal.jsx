@@ -55,10 +55,10 @@ function Window({ children, name }) {
   return createPortal(
     <div>
       <div
-        className={`fixed left-0 top-0 z-[110] h-full w-full bg-[#00000050] backdrop-blur-sm`}
+        className={`fixed left-0 top-0 z-110 h-full w-full bg-[#00000050] backdrop-blur-xs`}
       ></div>
 
-      <div className="fixed left-0 top-0 z-[10000000] h-full w-full">
+      <div className="fixed left-0 top-0 z-10000000 h-full w-full">
         <div className="fixed left-[50%] top-[50%] z-50 max-h-[80vh] w-[90%] translate-x-[-50%] translate-y-[-50%] rounded-lg bg-white shadow-md md:w-[750px]">
           <button
             aria-label={t("general.close")}

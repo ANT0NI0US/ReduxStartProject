@@ -1,6 +1,6 @@
 export default function Card({ children }) {
   return (
-    <div className="overflow-hidden rounded-md bg-lightPrimary shadow-md">
+    <div className="bg-light-primary overflow-hidden rounded-md shadow-md">
       {children}
     </div>
   );

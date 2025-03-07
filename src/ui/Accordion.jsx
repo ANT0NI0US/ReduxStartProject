@@ -13,7 +13,7 @@ export default function Accordion({
     <div className={`${Styles}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flexBetween w-full bg-primary p-4 text-left font-medium text-white hover:bg-opacity-[0.9] focus:outline-none active:bg-opacity-[0.9]"
+        className="flexBetween bg-primary hover:bg-primary/95 active:bg-primary/90 w-full p-4 text-left font-medium text-white focus:outline-hidden"
       >
         <span>{title}</span>
 
@@ -24,7 +24,7 @@ export default function Accordion({
         />
       </button>
       {isOpen && (
-        <div className="border bg-info p-4 text-textColor">{children}</div>
+        <div className="bg-info text-text-color border p-4">{children}</div>
       )}
     </div>
   );

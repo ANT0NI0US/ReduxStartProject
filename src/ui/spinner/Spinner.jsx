@@ -8,7 +8,7 @@ const spinnerSizes = {
 export default function Spinner({ size = "md" }) {
   return (
     <div
-      className={`flexCenter bg-transparent backdrop-blur-sm ${spinnerSizes[size]}`}
+      className={`flexCenter bg-transparent backdrop-blur-xs ${spinnerSizes[size]}`}
     >
       <div className={`${styles.loader}`}></div>
     </div>

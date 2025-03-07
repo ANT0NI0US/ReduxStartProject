@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { MdLanguage } from "react-icons/md";
-import { useOutsideClick } from "../utils/useOutsideClick";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 
 export default function TranslateButton() {
   const { t, i18n } = useTranslation();
@@ -33,7 +33,7 @@ export default function TranslateButton() {
   return (
     <div
       ref={ref}
-      className="relative flex cursor-pointer items-center gap-[10px] rounded-full px-[10px] py-[5px] hover:bg-opacity-[0.8]"
+      className="hover:bg-primary/80 relative flex cursor-pointer items-center gap-[10px] rounded-full px-[10px] py-[5px]"
       onClick={toggleMenu}
     >
       <MdLanguage className="text-[20px]" />
@@ -46,7 +46,7 @@ export default function TranslateButton() {
           className={`border-lightRed absolute bottom-[-75px] left-[50%] translate-x-[-50%] rounded-md border bg-white p-[5px] text-center text-sm shadow-lg`}
         >
           <p
-            className="hover:bg-lightRed rounded-md p-[5px] transition-all hover:text-primary"
+            className="hover:bg-lightRed hover:text-primary rounded-md p-[5px] transition-all"
             onClick={() => {
               changeLanguageAndDirection("en");
               i18n.changeLanguage("en");
@@ -59,7 +59,7 @@ export default function TranslateButton() {
               changeLanguageAndDirection("ar");
               i18n.changeLanguage("ar");
             }}
-            className="hover:bg-lightRed rounded-md p-[5px] transition-all hover:text-primary"
+            className="hover:bg-lightRed hover:text-primary rounded-md p-[5px] transition-all"
           >
             {t("general.arabic")}
           </p>

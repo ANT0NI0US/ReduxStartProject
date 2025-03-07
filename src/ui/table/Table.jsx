@@ -24,7 +24,7 @@ const Body = ({ data, render }) => {
       <tbody>
         <tr>
           <td colSpan="100%">
-            <HighlightMessage Styles="!border-0 !rounded-none">
+            <HighlightMessage Styles="border-0! rounded-none!">
               <p className="text-lg">{t("general.noData")}</p>
             </HighlightMessage>
           </td>

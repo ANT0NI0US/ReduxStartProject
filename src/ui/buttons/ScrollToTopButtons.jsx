@@ -35,7 +35,7 @@ export default function ScrollToTopButtons() {
       onClick={scrollToTop}
       className={`${
         showScrollButton ? "bounce-infinite" : "hidden"
-      } flexCenter fixed bottom-5 right-5 z-[10000000000000] cursor-pointer rounded-xl border-[2px] border-darkPrimary bg-white p-3 transition-all duration-300 hover:bg-darkPrimary hover:text-white`}
+      } flexCenter border-dark-primary hover:bg-dark-primary fixed right-5 bottom-5 z-10000000000000 cursor-pointer rounded-xl border-[2px] bg-white p-3 transition-all duration-300 hover:text-white`}
     >
       <button aria-label={t("general.backToTop")}>
         <FaArrowUp />

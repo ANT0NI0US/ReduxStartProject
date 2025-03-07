@@ -23,6 +23,8 @@ import PageUnderConstruction from "@/ui/PageUnderConstruction";
 import Accordion from "@/ui/Accordion";
 import Card from "@/ui/Card";
 import BackButton from "@/ui/buttons/BackButton";
+import DarkModeButton from "@/ui/DarkModeButton";
+import TranslateButton from "@/ui/TranslationButton";
 
 const string = "he llo ";
 
@@ -55,6 +57,9 @@ const Test = () => {
   }
   return (
     <div className="container my-10">
+      <DarkModeButton />
+      <TranslateButton />
+      <h1 className="text-black dark:bg-black dark:text-yellow-300">totos</h1>
       <PageTitle title={t("general.pageNotFound")} />
 
       <div className="print:hidden">totos</div>

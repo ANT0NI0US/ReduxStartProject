@@ -11,7 +11,7 @@ export default function ModalBody({ onSubmit, children, type = "form" }) {
 
 function FormHeader({ title }) {
   return (
-    <h1 className="rtl:!font-alexandria rounded-tl-lg rounded-tr-lg border-b bg-[#00c6cf] py-6 ps-4 text-xl font-bold uppercase tracking-wider text-white sm:text-[26px] ltr:!font-protest">
+    <h1 className="rtl:font-alexandria! rounded-tl-lg rounded-tr-lg border-b bg-[#00c6cf] py-6 ps-4 text-xl font-bold uppercase tracking-wider text-white sm:text-[26px] ltr:font-protest!">
       {title}
     </h1>
   );

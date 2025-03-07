@@ -12,7 +12,7 @@ export default function BackButton({ To = "/", onClick }) {
       onClick={onClick}
       To={To}
       Replace
-      styles={`${i18n.language === "en" ? "!flex-row-reverse" : "!flex-row"}`}
+      styles={`${i18n.language === "en" ? "flex-row-reverse!" : "flex-row!"}`}
     >
       {t("general.back")}
       <TiArrowBack size={22} />

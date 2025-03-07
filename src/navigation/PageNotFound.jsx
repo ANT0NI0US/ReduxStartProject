@@ -7,11 +7,11 @@ export default function PageNotFound() {
   return (
     <main className="flexCenter bg-grayColor1 h-screen w-full flex-col">
       <div className="relative">
-        <h1 className="text-9xl font-extrabold tracking-widest text-textColor">
+        <h1 className="text-text-color text-9xl font-extrabold tracking-widest">
           404
         </h1>
         <div
-          className={`bg-mainColor absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12 rounded px-2 text-sm text-textColor`}
+          className={`bg-mainColor text-text-color absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12 rounded-sm px-2 text-sm`}
         >
           {t("general.pageNotFound")}
         </div>
@@ -21,7 +21,7 @@ export default function PageNotFound() {
           To="/"
           replace
           AriaLabel={t("general.backToDashboard")}
-          styles={`${i18n.language === "en" ? "!flex-row-reverse" : "!flex-row"}`}
+          styles={`${i18n.language === "en" ? "flex-row-reverse!" : "flex-row!"}`}
         >
           <p>{t("general.backToDashboard")}</p>
           <TiArrowBack size={22} />

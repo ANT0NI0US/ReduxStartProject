@@ -18,7 +18,7 @@ const iconComponents = {
 };
 
 const baseStyle =
-  "flexCenter rounded-md border-[0.5px] border-darkPrimary bg-lightPrimary p-[5px] text-textColor transition-all hover:bg-darkPrimary hover:text-white";
+  "flexCenter rounded-md border-[0.5px] border-dark-primary bg-light-primary p-[5px] text-text-color transition-all hover:bg-dark-primary hover:text-white";
 
 export default function ActionButton({ icon, onClick, label, To }) {
   if (To)

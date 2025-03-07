@@ -9,7 +9,7 @@ export default function DarkModeButton() {
 
   const darkModeHandler = () => {
     setDark(!dark);
-    document.body.classList.toggle("dark");
+    document.documentElement.classList.toggle("dark");
   };
 
   return (
@@ -22,7 +22,7 @@ export default function DarkModeButton() {
       <button
         onClick={darkModeHandler}
         aria-label={t("general.colorTheme")}
-        className={`relative flex size-10 items-center justify-center rounded-full bg-white p-2 shadow-lg transition-colors duration-500 hover:shadow-xl focus:outline-none dark:bg-gray-800`}
+        className={`relative flex size-10 items-center justify-center rounded-full bg-white p-2 shadow-lg transition-colors duration-500 hover:shadow-xl focus:outline-hidden dark:bg-gray-800`}
       >
         <span
           className={`absolute h-8 w-8 rounded-full transition-transform duration-500 ${

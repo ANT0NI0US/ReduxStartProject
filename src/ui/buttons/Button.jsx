@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Loading = () => (
-  <div className="flexCenter gap-1 [&_div]:size-3 [&_div]:rounded-full [&_div]:bg-darkPrimary">
+  <div className="flexCenter [&_div]:bg-dark-primary gap-1 [&_div]:size-3 [&_div]:rounded-full">
     <div className="animate-bounce [animation-delay:-0.3s]"></div>
     <div className="animate-bounce [animation-delay:-0.15s]"></div>
     <div className="animate-bounce"></div>
@@ -21,24 +21,24 @@ export default function Button({
   To,
   Replace = false,
 }) {
-  const base = `focus:outline-none flexCenter gap-1 w-full rounded-md border text-sm sm:text-base font-bold h-[45px] transition-all focus:offset-2 focus:ring focus:ring-primary duration-300
+  const base = `focus:outline-hidden flexCenter gap-1 w-full rounded-md border text-sm sm:text-base font-bold h-[45px] transition-all focus:offset-2 focus:ring-3 focus:ring-primary duration-300
     ${
       (disabled || loading) &&
-      "!cursor-not-allowed !border-disabled !bg-disabled"
+      "cursor-not-allowed! border-disabled! bg-disabled!"
     }`;
 
   const variationStyles = {
     primary: `bg-primary text-white ${
-      !disabled && !loading && "hover:bg-opacity-[0.9] active:bg-opacity-[0.9]"
+      !disabled && !loading && "hover:bg-primary/95 active:bg-primary/95"
     }`,
-    secondary: `bg-lightPrimary border-white text-textColor 
+    secondary: `bg-light-primary border-primary text-text-color 
       ${
         !disabled &&
         !loading &&
         "hover:border-primary hover:bg-primary hover:text-white active:bg-primary active:text-white"
       }`,
     delete: `bg-error text-white border-darkB
-        ${!disabled && !loading && "hover:bg-opacity-[0.9] active:bg-opacity-[0.9]"}`,
+        ${!disabled && !loading && "hover:bg-error/90 active:bg-error/90"}`,
     danger: `bg-white text-error border-error
         ${
           !disabled &&

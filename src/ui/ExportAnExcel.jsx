@@ -19,7 +19,7 @@ export default function ExportAnExcel({ data, title, tooltip, onChange }) {
       onClick={handleClick}
       AriaLabel={tooltip}
       variation="secondary"
-      styles="!h-fit !min-h-[45px]"
+      styles="h-fit! min-h-[45px]!"
     >
       {!onChange && <PiMicrosoftExcelLogoFill size={25} />}
       <span>{title}</span>

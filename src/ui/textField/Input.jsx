@@ -27,26 +27,25 @@ export default function Input({
   const errorStyles = error ? styles.error : styles.default;
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       {/* Label for "filled" variation */}
       {label && type !== "file" && variation === "filled" && (
         <Label label={label} error={error} />
       )}
 
       <div
-        className={`relative
-          ${
-            type !== "file"
-              ? `z-10 flex items-center rounded-md transition-all duration-300 ${errorStyles}`
-              : ""
-          }`}
+        className={`relative ${
+          type !== "file"
+            ? `z-10 flex items-center rounded-md transition-all duration-300 ${errorStyles}`
+            : ""
+        }`}
       >
         {/* Input Field */}
         <input
           id={placeholder}
           type={showPassword ? "text" : type}
           placeholder={!label || variation === "filled" ? placeholder : " "}
-          className={`input ${styles.input} ${type === "file" ? "hidden" : ""} ${!Icon ? "rounded-md" : i18n.language === "ar" ? "rounded-br-md rounded-tr-md" : "rounded-bl-md rounded-tl-md"} `}
+          className={`input ${styles.input} ${type === "file" ? "hidden" : ""} ${!Icon ? "rounded-md" : i18n.language === "ar" ? "rounded-tr-md rounded-br-md" : "rounded-tl-md rounded-bl-md"} `}
           disabled={disabled}
           {...(register ? register : {})}
           {...rest}
@@ -55,7 +54,7 @@ export default function Input({
         {/* Optional Icon */}
         {Icon && type !== "file" && type !== "password" && (
           <div
-            className={`${i18n.language === "ar" ? "rounded-bl-md rounded-tl-md" : "rounded-br-md rounded-tr-md"} flexCenter h-[44px] w-[40px] ${disabled ? "cursor-not-allowed bg-disabled" : ""}`}
+            className={`${i18n.language === "ar" ? "rounded-tl-md rounded-bl-md" : "rounded-tr-md rounded-br-md"} flexCenter h-[44px] w-[40px] ${disabled ? "bg-disabled cursor-not-allowed" : ""}`}
           >
             {Icon}
           </div>
@@ -96,7 +95,7 @@ export default function Input({
       {/* File Upload */}
       {type === "file" && (
         <label
-          className={`flexCenter h-40 w-full cursor-pointer flex-col rounded-lg border-4 border-dashed border-darkPrimary p-5 text-center text-darkPrimary ${disabled ? "cursor-not-allowed bg-disabled" : ""} ${error ? `${normalError}` : ""}`}
+          className={`flexCenter border-dark-primary text-dark-primary h-40 w-full cursor-pointer flex-col rounded-lg border-4 border-dashed p-5 text-center ${disabled ? "bg-disabled cursor-not-allowed" : ""} ${error ? `${normalError}` : ""}`}
           disabled={disabled}
           onClick={() => document.getElementById(placeholder)?.click()}
         >
